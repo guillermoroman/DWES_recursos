@@ -3,7 +3,7 @@
 ## Tabla pizzas
 
 ```sql
-INSERT INTO Pizza (nombre, coste, precio, ingredientes) VALUES ('Margherita', 3.00, 8.00, 'Tomate, Mozzarella, Albahaca'), ('Pepperoni', 3.50, 9.00, 'Tomate, Mozzarella, Pepperoni'), ('Hawaiana', 4.00, 10.00, 'Tomate, Mozzarella, Jamón, Piña'), ('Cuatro Quesos', 4.50, 11.00, 'Mozzarella, Queso Azul, Queso de Cabra, Parmesano'), ('Vegetariana', 3.80, 9.50, 'Tomate, Mozzarella, Pimiento, Cebolla, Champiñones, Aceitunas'), ('BBQ Chicken', 4.50, 11.00, 'Salsa BBQ, Pollo, Cebolla, Mozzarella'), ('Mexicana', 4.00, 10.50, 'Tomate, Mozzarella, Jalapeños, Carne Picada, Cebolla'), ('Marinara', 2.50, 7.50, 'Tomate, Ajo, Orégano'), ('Quattro Stagioni', 4.50, 11.50, 'Tomate, Mozzarella, Jamón, Champiñones, Alcachofas, Aceitunas'), ('Carbonara', 4.00, 10.00, 'Nata, Mozzarella, Panceta, Cebolla');
+INSERT INTO pizzas (nombre, coste, precio, ingredientes) VALUES ('Margherita', 3.00, 8.00, 'Tomate, Mozzarella, Albahaca'), ('Pepperoni', 3.50, 9.00, 'Tomate, Mozzarella, Pepperoni'), ('Hawaiana', 4.00, 10.00, 'Tomate, Mozzarella, Jamón, Piña'), ('Cuatro Quesos', 4.50, 11.00, 'Mozzarella, Queso Azul, Queso de Cabra, Parmesano'), ('Vegetariana', 3.80, 9.50, 'Tomate, Mozzarella, Pimiento, Cebolla, Champiñones, Aceitunas'), ('BBQ Chicken', 4.50, 11.00, 'Salsa BBQ, Pollo, Cebolla, Mozzarella'), ('Mexicana', 4.00, 10.50, 'Tomate, Mozzarella, Jalapeños, Carne Picada, Cebolla'), ('Marinara', 2.50, 7.50, 'Tomate, Ajo, Orégano'), ('Quattro Stagioni', 4.50, 11.50, 'Tomate, Mozzarella, Jamón, Champiñones, Alcachofas, Aceitunas'), ('Carbonara', 4.00, 10.00, 'Nata, Mozzarella, Panceta, Cebolla');
 ```
 
 Introducir datos:
@@ -15,7 +15,7 @@ CREATE TABLE clientes (
     id INT AUTO_INCREMENT PRIMARY KEY,
     correo_electronico VARCHAR(255) NOT NULL UNIQUE,
     telefono VARCHAR(20),
-    nombre VARCHAR(255)
+    nombre VARCHAR(255),
     direccion VARCHAR(255)
 );
 ```
