@@ -3,22 +3,7 @@ require "connection.php";
 $pdo = conectarBD();
 
 // Procesar el formulario al enviar
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nombre = $_POST['nombre'];
-    $email = $_POST['email'];
-    $telefono = $_POST['telefono'];
-    $actividad = $_POST['actividad'];
 
-    // Preparar y ejecutar la consulta SQL
-    $sql = "INSERT INTO clientes (nombre, email, telefono, actividad) VALUES (?, ?, ?, ?)";
-    $stmt = $pdo->prepare($sql);
-    
-    // Ejecutar la consulta
-    $stmt->execute([$nombre, $email, $telefono, $actividad]);
-
-    // Redireccionar a otra página o mostrar un mensaje de éxito
-    echo "<p>Cliente registrado con éxito.</p>";
-}
 
 ?>
 
