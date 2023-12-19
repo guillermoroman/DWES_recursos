@@ -10,7 +10,7 @@ if (isset($_COOKIE['lastActivity'])) {
 }
 if (isset($_POST['activity'])) {
     $selectedActivity = $_POST['activity'];
-    setcookie('lastActivity', $selectedActivity, 86400); // 86400 = 24 horas
+    // set cookie
 }
 
 // Consulta SQL
