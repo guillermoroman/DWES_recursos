@@ -34,7 +34,7 @@ composer create-project laravel/laravel [nombre_a_elegir]
 laravel new [nombre_a_elegir]
 ```
 
-# Abrir el proyecto
+## Abrir el proyecto con VSCode
 
 Al crear el proyecto, se ha generado una carpeta en la ubicaciónd desde la que ejecutamos la orden. Para 
 1. Entramos en el nuevo directorio
@@ -45,3 +45,10 @@ cd [nombre_elegido]
 ```shell
 code .
 ```
+
+## Arrancar el servidor laravel
+
+```shell
+php artisan serve
+````
+``
