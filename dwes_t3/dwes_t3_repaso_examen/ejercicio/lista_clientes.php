@@ -10,7 +10,7 @@ if (isset($_COOKIE['lastActivity'])) {
 }
 if (isset($_POST['activity'])) {
     $selectedActivity = $_POST['activity'];
-    // set cookie
+    // set cookie≥
 }
 
 // Consulta SQL
