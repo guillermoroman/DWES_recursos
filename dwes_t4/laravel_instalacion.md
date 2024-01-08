@@ -51,4 +51,3 @@ code .
 ```shell
 php artisan serve
 ````
-``
