@@ -451,3 +451,16 @@ public function run()
 TODO: Mostrar los cambios en las vistas.
 // TODO: Combinar en una; solo debería cambiar la lista de tuits que se le mandan
 
+
+
+>[!Ejercicio]
+Agregar Funcionalidad de "Me Gusta" a los Tuits
+Objetivo: Implementar una funcionalidad que permita a los usuarios dar "me gusta" a los tuits.
+Subtareas:
+- Crear una nueva tabla likes que relacione los tuits con los usuarios que les han dado "me gusta".
+- Modificar el modelo Tuit para incluir una relación que identifique los "me gusta" que ha recibido.
+- Añadir un botón de "me gusta" en la vista de cada tuit y actualizar la vista para mostrar el conteo de "me gusta".
+- Crear una acción en un controlador para manejar la lógica de dar/quitar "me gusta".
+
+
+
