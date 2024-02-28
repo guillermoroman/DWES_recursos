@@ -120,7 +120,7 @@ Este código utiliza estilos de Tailwind, componentes blade, etc. Una versión s
 </head>
 <body>
 <div>
-<form method="POST" action="/path/to/chirps/store">
+<form method="POST" action="/path/to/tuits/store">
 <textarea name="message"></textarea>
 
   
@@ -155,8 +155,8 @@ Añadamos un link al menú de navegación que nos proporciona Breeze.  En el arc
 Y también para pantallas móviles:
 
 ```php
-<x-responsive-nav-link :href="route('chirps.index')" :active="request()->routeIs('chirps.index')">
-{{ __('Chirps') }}
+<x-responsive-nav-link :href="route('tuits.index')" :active="request()->routeIs('tuits.index')">
+{{ __('Tuits') }}
 </x-responsive-nav-link>
 ```
 
@@ -181,9 +181,9 @@ Por último, devolvemos un redirect como respuesta para devolver al usuario a la
 En el código anterior vimos que llamamos a un método `tuits` asociado al objeto `$request->user()`. Necesitamos crear este método en nuestro modelo `User`para definir una relación "has many".
 
 ```php
-public function chirps(): HasMany
+public function tuits(): HasMany
 {
-	return $this->hasMany(Chirp::class);
+	return $this->hasMany(Tuit::class);
 }
 ```
 
@@ -193,7 +193,7 @@ Pasar todos los datos de una solicitud a tu modelo puede ser arriesgado. Imagina
 
 Laravel te protege de hacer esto accidentalmente al bloquear la asignación masiva por defecto. Sin embargo, la asignación masiva es muy conveniente, ya que te evita tener que asignar cada atributo uno por uno. Podemos habilitar la asignación masiva para atributos seguros marcándolos como "fillable" o "rellenables".
 
-Agreguemos la propiedad $fillable a nuestro modelo Chirp para habilitar la asignación masiva para el atributo de mensaje:
+Agreguemos la propiedad $fillable a nuestro modelo Tuit para habilitar la asignación masiva para el atributo de mensaje:
 
 ```php
 protected $fillable = [
