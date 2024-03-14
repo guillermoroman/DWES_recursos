@@ -1,4 +1,5 @@
-# Inertia
+# Laravel Tuit con React
+## Inertia
 https://inertiajs.com
 Librería que une el un framework front-end como React o Vue, con un framework back-end como Laravel o Rails.
 
