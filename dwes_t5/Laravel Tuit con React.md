@@ -1,3 +1,11 @@
+# Inertia
+https://inertiajs.com
+Librería que une el un framework front-end como React o Vue, con un framework back-end como Laravel o Rails.
+
+### Proyecto de muestra: CRM
+https://inertiajs.com/demo-application
+
+
 ## Configuración
 ### Crear nuevo proyecto
 
