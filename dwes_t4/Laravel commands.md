@@ -1,3 +1,9 @@
+
+## Models
+Crear modelo con migración y controlador
+```
+php artisan make:model Todo -mcr
+```
 ## Migrations
 
 1. Ejecutar migraciones:
