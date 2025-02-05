@@ -1,6 +1,6 @@
 
 ## Models
-Crear modelo con migración y controlador
+Crear modelo con migración y controlador de tipo recurso
 ```
 php artisan make:model Todo -mcr
 ```
